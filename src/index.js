@@ -1,6 +1,12 @@
+// All external imports
+import 'bootstrap/scss/bootstrap.scss';
+
+// All React imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
+// All App imports
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
