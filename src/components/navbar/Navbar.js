@@ -25,19 +25,7 @@ export default function Navbar(props) {
 	return (
 		<section>
 			<ul className="header">
-				{navLinks}
-				{/* <li className='list-item'>
-          <button className='nav-links' onClick={() => linkClick('Menu')}>Menu</button>
-        </li>
-        <li className='list-item'>
-          <button className='nav-links' onClick={() => linkClick('Orders')}>Orders</button>
-        </li>
-        <li className='list-item logo'>
-          <h1 className='title'>{props.title}</h1>
-        </li>
-        <li className='list-item'>
-          <button className='nav-links' onClick={() => linkClick('Cart')}>Cart</button>
-        </li> */}
+				{ navLinks }
 			</ul>
 		</section>
 	);

@@ -7,7 +7,7 @@ function App() {
 			<div className='top-bar'></div>
 			<div className='body-container'>				
 				<Navbar title='Pizzeria'></Navbar>
-				<h1 style={{textAlign: 'center'}}>Welcome to the Pizzeria!</h1>				
+				<h1 style={{textAlign: 'center'}}>Welcome to the Pizzeria!</h1>		
 			</div>
 		</div>
 	);
