@@ -1,32 +1,47 @@
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 export default function Navbar(props) {
-	const navItems = ['Menu', 'Orders', props.title, 'Cart'];
+	const navItems = [
+		{
+			link: '/menu',
+			label: 'Menu',
+		},
+		{
+			link: '/',
+			label: props.title,
+		},
+		{
+			link: '/orders',
+			label: 'Orders',
+		},
+		{
+			link: '/cart',
+			label: 'Cart',
+		}
+	];
+
 	const navLinks = navItems.map((item, index) => {
-		if (index === 2) {
+		if (index === 1) {
 			return (
 				<li className="list-item logo" key={index}>
-					<h1 className="title">{item}</h1>
+					<h1 className="title">
+						<Link className='title-link' to={'/'}>{item.label}</Link>
+					</h1>
 				</li>
 			);
 		} else {
-      return (
+			return (
 				<li className="list-item" key={index}>
-					<button className="nav-links" onClick={() => linkClick(item)}>{item}</button>
+					<Link className="nav-links" to={item.link}>{item.label}</Link>
 				</li>
 			);
-    }
+		}
 	});
-
-	function linkClick(message) {
-		console.log(props, message);
-	}
 
 	return (
 		<section>
-			<ul className="header">
-				{ navLinks }
-			</ul>
+			<ul className="header">{navLinks}</ul>
 		</section>
 	);
 }

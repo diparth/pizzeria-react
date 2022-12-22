@@ -25,6 +25,15 @@
     font-weight: 500;
   }
   
+  .title-link {
+    color: white;
+    text-decoration: none;
+    
+    &:hover {
+      color: white;
+    }
+  }
+  
   .nav-links {
     display: block;
     padding: 0 12px;
@@ -37,6 +46,7 @@
     
     color: white;
     background-color: transparent;
+    cursor: pointer;
     
     &:hover {
       background-color: #227d7d;
