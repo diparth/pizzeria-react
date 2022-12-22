@@ -24,7 +24,7 @@ export default function Navbar(props) {
 	const navLinks = navItems.map((item, index) => {
 		if (index === 1) {
 			return (
-				<li className="list-item logo" key={index}>
+				<li className="list-item logo" key={item.id}>
 					<h1 className="title">
 						<Link className='title-link' to={'/'}>{item.label}</Link>
 					</h1>
@@ -32,7 +32,7 @@ export default function Navbar(props) {
 			);
 		} else {
 			return (
-				<li className="list-item" key={index}>
+				<li className="list-item" key={item.id}>
 					<Link className="nav-links" to={item.link}>{item.label}</Link>
 				</li>
 			);
