@@ -13,7 +13,7 @@ export default function Menu(props) {
 				<p className="item-label">{item.name}</p>
 				<div className="item-action">
 					<p className="price-label">Rs. {item.price}</p>
-					<button className="add-btn">Add +</button>
+					<button className="add-btn">Add <i class="bi bi-plus-lg"></i></button>
 				</div>
 			</div>
 		);

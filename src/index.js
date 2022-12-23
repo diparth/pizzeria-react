@@ -1,5 +1,6 @@
 // All external imports
 import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap-icons/font/bootstrap-icons.scss';
 
 // All React imports
 import React from 'react';

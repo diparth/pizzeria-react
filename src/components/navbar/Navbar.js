@@ -40,7 +40,7 @@ export default function Navbar(props) {
 	});
 
 	return (
-		<section>
+		<section id='navBar'>
 			<ul className="header">{navLinks}</ul>
 		</section>
 	);
