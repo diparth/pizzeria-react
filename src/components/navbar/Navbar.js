@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 export default function Navbar(props) {
@@ -22,7 +22,7 @@ export default function Navbar(props) {
 			id: 3,
 			link: '/cart',
 			label: 'Cart',
-		}
+		},
 	];
 
 	const navLinks = navItems.map((item, index) => {
@@ -30,21 +30,25 @@ export default function Navbar(props) {
 			return (
 				<li className="list-item logo" key={item.id}>
 					<h1 className="title">
-						<NavLink className='title-link' to={'/'}>{item.label}</NavLink>
+						<NavLink className="title-link" to={'/'}>
+							{item.label}
+						</NavLink>
 					</h1>
 				</li>
 			);
 		} else {
 			return (
 				<li className="list-item" key={item.id}>
-					<NavLink end={true} className="nav-links" to={item.link}>{item.label}</NavLink>
+					<NavLink end={true} className="nav-links" to={item.link}>
+						{item.label}
+					</NavLink>
 				</li>
 			);
 		}
 	});
 
 	return (
-		<section id='navBar'>
+		<section id="navBar">
 			<ul className="header">{navLinks}</ul>
 		</section>
 	);
