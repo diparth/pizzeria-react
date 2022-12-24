@@ -13,15 +13,15 @@ export default function Menu(props) {
 				<p className="item-label">{item.name}</p>
 				<div className="item-action">
 					<p className="price-label">Rs. {item.price}</p>
-					<button className="add-btn">Add <i class="bi bi-plus-lg"></i></button>
+					<button className="add-btn">Add <i className='bi bi-plus-lg'></i></button>
 				</div>
 			</div>
 		);
 	});
 
 	return (
-		<section>
-			<h1 className="menu-header">Explore Menu</h1>
+		<section id='menuPage'>
+			<h1 className="page-header">Explore Menu</h1>
 			<div className="menu-container">{pizzaCards}</div>
 		</section>
 	);

@@ -1,3 +1,10 @@
-.cart-header {
-  font-size: 2rem;
+#cartPage {
+  .cart-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 .4rem 1rem;
+    margin: 1rem 0 2rem;
+    border-bottom: 1px solid #1e5e5e;
+    box-shadow: 0 10px 18px -20px #1e5e5e;
+  }
 }
